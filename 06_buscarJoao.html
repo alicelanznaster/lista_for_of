@@ -6,9 +6,18 @@
     //Identifique todos os nomes que contém "João" em qualquer parte do nome e separe-os em uma lista. Apresente a lista ao final do programa. Considere que poderão haver "Joãos" sem ~ (til).
 
     //ENTRADA
+    let listaDeNomes = ["João Pedro", "Gabriel José", "Ulisses Joao", "Pedro Henrique", "João da Silva", "João Henrique", "Alisson João"];
 
+    let listaJoao = [];
     //PROCESSAMENTO
+    for(let nome of listaDeNomes) {
+        if (nome.includes("João") || nome.includes("Joao")) {
+            listaJoao.push(nome);
+        }
+        
+    }
     
     //SAÍDA
+    document.write(`Nomes que possuem "João" ou "Joao": ${listaJoao.join(" - ")}.`);
 
 </script>
